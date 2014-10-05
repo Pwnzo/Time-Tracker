@@ -1,4 +1,4 @@
-package com.matthewteolis.timer;
+package com.matthewteolis.timetracker;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import com.matthewteolis.timer.objects.Clock;
+import com.matthewteolis.timetracker.objects.Clock;
 
 
 @SuppressWarnings("serial")

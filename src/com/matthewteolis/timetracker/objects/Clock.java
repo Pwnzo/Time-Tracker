@@ -1,4 +1,4 @@
-package com.matthewteolis.timer.objects;
+package com.matthewteolis.timetracker.objects;
 
 public class Clock
 {	
