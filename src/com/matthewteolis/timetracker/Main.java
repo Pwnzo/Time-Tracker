@@ -1,9 +1,11 @@
 package com.matthewteolis.timetracker;
 
+import com.matthewteolis.timetracker.gui.MyFrame;
+
 public class Main
 {	
 	public static void main(String[] args)
 	{
-		MyFrameNew myFrame = new MyFrameNew();
+		MyFrame myFrame = new MyFrame();
 	}
 }

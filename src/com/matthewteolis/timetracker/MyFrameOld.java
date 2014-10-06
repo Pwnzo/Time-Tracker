@@ -13,11 +13,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import com.matthewteolis.timetracker.objects.Clock;
+import com.matthewteolis.timetracker.lib.Clock;
 
-
+@Deprecated
 @SuppressWarnings("serial")
-public class MyFrame extends JFrame implements Runnable
+public class MyFrameOld extends JFrame implements Runnable
 {
 	
 	private JPanel contentPane;
@@ -29,7 +29,7 @@ public class MyFrame extends JFrame implements Runnable
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		EventQueue.invokeLater(new Runnable()
 		{
@@ -37,7 +37,7 @@ public class MyFrame extends JFrame implements Runnable
 			{
 				try
 				{
-					MyFrame frame = new MyFrame();
+					MyFrameOld frame = new MyFrameOld();
 					frame.setVisible(true);
 					frame.createThread();
 				}
@@ -47,7 +47,7 @@ public class MyFrame extends JFrame implements Runnable
 				}
 			}
 		});
-	}
+	}*/
 	
 	public void init()
 	{
@@ -59,7 +59,7 @@ public class MyFrame extends JFrame implements Runnable
 	/**
 	 * Create the frame.
 	 */
-	public MyFrame()
+	public MyFrameOld()
 	{
 		init();
 		setTitle("Time Tracker");
@@ -67,7 +67,7 @@ public class MyFrame extends JFrame implements Runnable
 		setBackground(Color.DARK_GRAY);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 213);
-		setIconImage(new ImageIcon(MyFrame.class.getResource("images/timer.png")).getImage());
+		setIconImage(new ImageIcon(MyFrameOld.class.getResource("images/timer.png")).getImage());
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.DARK_GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
